@@ -1,0 +1,56 @@
+.container-homepage{
+    width: 100%;
+    
+}
+
+.container-homepage .btn-options button{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border: none;
+}
+
+.body-modal{
+    overflow: auto;
+    padding: 25px;
+    margin-top: -15px;
+}
+
+.body-modal-msg p{
+    padding: 5px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+.without-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 30px;
+    border: 1px grey solid;
+    border-radius: 10px;
+}
+
+.footer-modal-delete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 5px;
+}
+
+.footer-modal-delete .btn-cancel{
+    background-color: rgb(66, 63, 63);
+}
+
+.footer-modal-delete .btn-cancel:hover{
+    background-color: rgb(20, 20, 20);
+}
+
+.footer-modal-delete .btn-accept{
+    background-color: rgb(30, 109, 59);
+}
+.footer-modal-delete .btn-accept:hover{
+    background-color: rgb(36, 171, 86);
+}

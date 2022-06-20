@@ -1,0 +1,8 @@
+.subtitle{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px black solid;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}

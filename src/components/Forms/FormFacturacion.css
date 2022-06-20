@@ -1,0 +1,33 @@
+.form-body{ 
+  padding: 10px;
+  margin: 5px;
+  margin-block: 1rem;  
+}
+
+.footer-form{
+  display: flex;
+justify-content: space-evenly;
+margin-left: 31px;
+width: calc(100% + 32px);
+margin-top: 20px;
+flex-direction: row-reverse;
+}
+
+.footer-form .btn-cancel{
+  background-color: rgb(66, 63, 63);
+}
+
+.footer-form .btn-cancel:hover{
+  background-color: rgb(20, 20, 20);
+}
+
+.footer-form .btn-accept{
+  background-color: rgb(30, 109, 59);
+}
+.footer-form .btn-accept:hover{
+  background-color: rgb(36, 171, 86);
+}
+
+#select-multiple-op{
+  width: 220px;
+}
