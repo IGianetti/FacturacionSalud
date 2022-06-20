@@ -78,12 +78,16 @@ export default function FormFacturacion(props) {
   };
 
   const handleInputsChange = (e) => {
-    setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
-    calcularSaldo(e);
+    let dataUpdate = { ...formInfo, [e.target.name]: e.target.value };
+    console.log("data: ", dataUpdate);
+    setFormInfo(dataUpdate);
+    calcularSaldo(dataUpdate);
   };
 
-  const calcularSaldo = (e) => {
-    const result = formInfo.importe - formInfo.pagoParcial;
+  const calcularSaldo = (dataUpdate) => {
+    const result = dataUpdate.importe - dataUpdate.pagoParcial;
+    console.log("FORMINFO: ", formInfo);
+    console.log("resultado: ", result);
     let keySaldo = "importSaldo";
 
     setSaldo({ ...saldo, [keySaldo]: result });
@@ -106,7 +110,7 @@ export default function FormFacturacion(props) {
       estado: formInfo.estado,
       importe: formInfo.importe,
       pagoParcial: formInfo.pagoParcial,
-      saldo: formInfo.saldo,
+      saldo: saldo.importSaldo,
     });
     setFormInfo(initialState);
 
@@ -273,6 +277,7 @@ export default function FormFacturacion(props) {
           </div>
         </Grid>
       </ValidatorForm>
+      
     </Box>
   );
 }
